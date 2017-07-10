@@ -1,0 +1,232 @@
+// -768...
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+.container {
+	padding: 0 1.5rem;
+}
+.la-main-content,
+.la-sidebar {
+	width: 100%;
+}
+.la-block-layout-01 {
+	.la-ajax-loading {
+  		display: none;
+	}
+
+	.la-small-article {
+		article {
+			margin-left: 0;
+			width: 100%;
+			figure {
+				.la-img {
+					width: 100%;
+					min-height: 18rem;
+				}
+			}
+
+		}
+	}
+	.la-small-article-3 {
+		article {
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			figure {
+				width: 20rem;
+				height: 15rem;
+				.la-img {
+					min-height: 15rem;
+				}
+			}
+
+			.entry-header,
+			.entry-content {
+				padding-right: 22rem;
+				h2 {
+					max-height: 6rem;
+					min-height: 6rem;
+				}
+				p.limit-p3 {
+					height: 5rem;
+				}
+			}
+		}
+	}
+}
+
+.la-varity-articles {
+	article {
+		&:nth-child(even) {
+			margin: 0;
+		}
+		margin-left: 2.7rem !important;
+	}
+}
+.la-468x60 {
+	display: none;
+}
+.la-right-bar {
+	display: none;
+}
+.la-main-content-02 {
+    width: 100% !important;
+}
+.main-header .la-nav-search {
+	left: 1.5rem;
+	z-index: 10;
+}
+.la-970x90,
+.la-728x90,
+.la-main-header {
+	display: none;
+}
+.la-topbar .la-social-icons li {
+	width: 2rem;
+}
+.la-topbar .la-bar-links li:first-child {
+	display: none;
+}
+.navbar.navbar-default .navbar-left li {
+	float: none;
+	a {
+		line-height: 3.5rem;
+	}
+}
+.navbar.navbar-default .navbar-left {
+	margin: 0;
+}
+.navbar-default {
+	.navbar-toggle {
+		position: absolute;
+		left: 3rem;
+		border: 0;
+		top: 1.3rem;
+		z-index: 10;
+		.icon-bar {
+			background: @accentRed;
+		}
+		&:hover,
+		&:focus {
+			background: transparent;
+		}
+	}
+	.navbar-collapse {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+	}
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	margin: 0;
+}
+.main-header .la-nav-search {
+	left: 5.5rem;
+}
+.la-header-layout-02 .main-header .la-nav-search.la-user {
+	left: 9rem;
+}
+.la-header-layout-02 {
+	.navbar-default {
+		.navbar-toggle {
+			position: absolute;
+			left: .5rem;
+			border: 0;
+			top: .1rem;
+			z-index: 10;
+			.icon-bar {
+				background: @white;
+			}
+			&:hover,
+			&:focus {
+				background: transparent;
+			}
+		}
+		.navbar-collapse {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			border: 0;
+		}
+	}
+	.navbar.navbar-default .navbar-right li>.dropdown-menu {
+		overflow: hidden;
+	}
+	.navbar.navbar-default .navbar-right li>.dropdown-menu li a {
+    	&:hover,
+    	&:focus {
+    		background: transparent;
+			color: darken(@accentRed, 50%);
+    	}
+	}
+	
+	.navbar.navbar-default .navbar-right li {
+		float: none;
+		a {
+			line-height: 3.5rem;
+
+			&:hover,
+			&:focus {
+				background: transparent;
+				color: darken(@accentRed, 50%);
+			}
+		}
+	}
+	.navbar.navbar-default .navbar-right {
+		margin: 0;
+	}
+	.main-header {
+		.site-branding {
+			display: inherit;
+		}
+	}
+}
+.navbar.navbar-default .navbar-header .site-logo {
+    padding: 1.3rem 0;
+}
+
+.la-block-common {
+	margin-bottom: 3rem;
+}
+
+
+
+.la-slider-common {
+	.la-slider-item {
+		position: relative;
+		outline: 0;
+		margin-right: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.la-slider-layout-02 {
+	.la-slider-item {
+		[class*="col-"] {
+			  padding: 0 .1rem;
+			}
+		article {
+			min-height: 20rem;
+			margin-bottom: .2rem;
+		}
+		.la-rows {
+			article {
+				min-height: 20rem;
+			}
+		}
+	}
+}
+

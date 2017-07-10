@@ -1,0 +1,102 @@
+//992
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+.container {
+	width: 100%;
+	padding: 0 1.5rem;
+}
+.la-block-layout-01 {
+	.la-small-article article {
+
+		&:nth-child(2),
+		&:nth-child(4),
+		&:nth-child(6) {
+			margin: 0;
+		}
+		margin-left: 3rem;
+		width: 19.3rem;
+		figure {
+			.la-img {
+				width: 100%;
+			}
+		}
+	}
+
+	.la-ajax-loading {
+		// position: absolute;
+  		//left: 1.5rem;
+  		//bottom: 3rem;
+  		display: none;
+	}
+
+	.la-big-article {
+		article {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.la-small-article-3 {
+		article {
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			figure {
+				width: 15rem;
+				height: 10rem;
+				.la-img {
+					min-height: 10rem;
+				}
+			}
+
+			.entry-header,
+			.entry-content {
+				padding-right: 17rem;
+				h2 {
+					max-height: 6rem;
+					min-height: 6rem;
+				}
+				p.limit-p3 {
+					height: 5rem;
+				}
+			}
+			.entry-content {
+				padding-right: 0;
+				padding-top: 1rem;
+			}
+		}
+	}
+}
+.la-block-layout-05 .la-big article h2 { font-size: 1.6rem;}
+.la-block-layout-07 .la-small-article article {
+	width: 29%;
+}
+.la-block-layout-08 article {
+	width: 46.5%;
+}
+.la-right-bar {
+	display: none;
+}
+.la-main-content-02 {
+	width: ~"calc(100% - 33rem)";
+}
+.main-header .la-nav-search {
+	left: 1.5rem;
+}
+.la-970x90,
+.la-728x90 {
+	display: none;
+}
+.la-header-layout-02 .main-header .la-nav-search.la-user {
+    left: 4.5rem;
+}

@@ -1,0 +1,104 @@
+
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+.la-main-content-02 {
+	width: ~"calc(100% - 52rem)";
+}
+.la-right-bar {
+	width: 19rem;
+}
+
+.la-block-layout-01 {
+	.la-small-article article {
+
+		&:nth-child(3),
+		&:nth-child(6) {
+			margin: 0;
+		}
+		margin-left: 3rem;
+		width: 19.3rem;
+		figure {
+			.la-img {
+				width: 100%;
+			}
+		}
+	}
+
+	.la-ajax-loading {
+		// position: absolute;
+  		//left: 1.5rem;
+  		//bottom: 3rem;
+  		display: none;
+	}
+
+	.la-big-article {
+		article {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.la-small-article-3 {
+		article {
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			figure {
+				width: 20rem;
+				height: 15rem;
+				.la-img {
+					min-height: 15rem;
+				}
+			}
+
+			.entry-header,
+			.entry-content {
+				padding-right: 22rem;
+				h2 {
+					max-height: 6rem;
+					min-height: 6rem;
+				}
+				p.limit-p3 {
+					height: 5rem;
+				}
+			}
+		}
+	}
+}
+
+.la-block-layout-05 .la-big article h2 { font-size: 1.6rem;}
+.la-block-layout-05 .la-small article figure .la-img {
+    width: 11rem;
+    min-height: 11rem;
+}
+.la-block-layout-05 .la-small article .la-content {
+    padding-right: 13rem;
+}
+
+.la-right-side .la-small-article article figure .la-img {
+	width: 100%;
+	position: relative;
+	margin-bottom: .5rem;
+}
+.la-right-side .la-small-article article .la-content {
+	padding-right: 0;
+}
+.la-block-layout-07 {
+	margin-bottom: 3rem;
+}
+.la-block-layout-07 .la-small-article article {
+	width: 13.2rem;
+}
+.la-block-layout-08 article {
+	width: 100%;
+}

@@ -1,0 +1,152 @@
+.la-slider-common {
+	margin-bottom: 3rem;
+	.la-slider-item {
+		position: relative;
+		outline: 0;
+		margin-right: .1rem;
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		article {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			min-height: 40rem;
+			padding: 3rem;
+			.transition(.35s);
+
+			.entry-header {
+				position: relative;
+				z-index: 10;
+				h2 {
+					margin-bottom: 0;
+					font-size: 1.8rem;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					min-height: 9rem;
+					max-height: 9rem;
+					direction: rtl;
+					
+					a {
+						color: @white;
+					}
+				}
+				.la-category {
+					background: @accentOrange;
+					color: @white;
+					padding: .5rem 1rem;
+					display: inline-block;
+					margin-bottom: 1rem;
+					border-radius: .4rem;
+				}
+			}
+			
+			.la-slide-hover {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				.transition(1.35s);
+				.la-red-bg();
+			}
+			&:hover,
+			&:focus {
+				.la-slide-hover {
+					.transition(1.35s);
+					.la-dark-red-bg();
+					opacity: .8;
+				}
+				
+			}
+		}
+	}	
+
+	.slick-prev,
+	.slick-next {
+		background: @accentRed;
+	}
+	.slick-prev {
+		left: 0;
+	}
+	.slick-next {
+		right: 0;
+	}
+}
+
+.la-slider-layout-02 {
+	.la-slider-content-02 {
+		padding: 0 1.5rem;
+	}
+	.la-slider-item {
+		article {
+			min-height: 40.2rem;
+			.la-slide-hover {
+				.la-black-bg();
+			}
+
+			.entry-header {
+				.la-category {
+					background: @accentRed;
+				}
+			}
+			&:hover,
+			&:focus {
+				.la-slide-hover {
+					.transition(1.35s);
+					.la-light-red-bg();
+					opacity: .8;
+				}
+				
+			}
+		}
+		[class*="col-"] {
+			  padding: 0 .1rem;
+			}
+		.la-rows {
+			article {
+				min-height: 20rem;
+				margin-bottom: .2rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.la-red-bg {
+	background: rgba(187, 42, 67, 0.5); 
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(187, 42, 67, 1));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(187, 42, 67, 1));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(187, 42, 67, 1)); 
+    opacity: 1;
+}
+.la-dark-red-bg {
+	background: rgba(134, 19, 39, 0.5); 
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1)); 
+    opacity: 1;
+}
+.la-black-bg {
+	background: rgba(187, 42, 67, 0.5); 
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 67, 1));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)); 
+    opacity: 1;
+}
+.la-light-red-bg {
+	background: rgba(134, 19, 39, 0.5); 
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(134, 19, 39, 1)); 
+    opacity: 1;
+}
+.slick-slider { display: table; table-layout: fixed; width: 100%; }

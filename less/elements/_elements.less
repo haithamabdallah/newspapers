@@ -1,0 +1,68 @@
+@import url('elements/_btns.less');
+@import url('elements/_ads.less');
+
+.la-blocks-title {
+	position: relative;
+
+	h1 {
+		font-size: 2rem;
+		position: relative;
+		margin-bottom: 3rem;
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: -1rem;
+			width: 3rem;
+			height: .2rem;
+			right: 0;
+		}
+		&:after {
+			background: @accentOrange;
+			right: 3.1rem;
+		}
+		&:before {
+			background: @accentRed;
+		}
+	}
+}
+
+.la-ajax-loading {
+	li {
+		display: inline-block;
+		width: 3rem;
+		height: 3rem;
+		background: @accentRed;
+		text-align: center;
+		line-height: 3.4rem;
+		.transition(.35s);
+		a {
+			display: block;
+			color: @white;
+		}
+
+		&:hover,
+		&:focus {
+			.transition(.35s);
+			background: @accentOrange;
+		}
+	}
+}
+
+.limit-p2,
+.limit-p3 {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: @font-size*@line-height*@lines-to-show; /* Fallback for non-webkit */
+    font-size: @font-size;
+    line-height: @line-height;
+    -webkit-line-clamp: @lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.limit-p3 {
+    -webkit-line-clamp: @lines-to-show2;
+    height: @font-size*@line-height*@lines-to-show2; /* Fallback for non-webkit */
+}
+

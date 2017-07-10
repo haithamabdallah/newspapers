@@ -1,0 +1,107 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+/* -- Table Of Contents --
+    01-Animation
+    02-Base Style
+    03-Menu
+    04-menu Responsive
+    05-Social
+    06-Articles
+    07-Posts
+    08-Breaking News
+    09-Responsive
+    10-Widgets
+    11-Flexslider
+    12-Elements
+    13-rtl
+----------------------- */
+
+//
+// IMPORTING STYLES
+//
+
+@import "var/_var.less";
+@import "base/_prefix.less";
+@import "base/_animate.less";
+@import "base/_base.less";
+@import "layouts/_header.less";
+@import "layouts/_menus.less";
+@import "lang/_ar.less";
+@import "fonts/_fonts.less";
+@import "magnific-popup/magnific-popup.less";
+@import "slick/slick.less";
+@import "slick/slick-theme.less";
+@import "layouts/_layouts.less";
+@import url('layouts/_sliders.less');
+@import url('elements/_elements.less');
+@import url('blocks/_blocks.less');
+@import url('blocks/_sidebar.less');
+@import url('layouts/_footer.less');
+
+
+/*
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+
+/*
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*/
+@media only screen and (max-width: 481px) {
+
+    // styles in 481up.less
+    @import "responsive/_481up.less";
+
+} // end of media query
+
+/*
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (max-width: 768px) {
+
+    // styles in 768up.less
+    @import "responsive/_768up.less";
+
+} // end of media query
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    // styles in 1030up.less
+    @import "responsive/_1030up.less";
+
+} // end of media query
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    // styles in 1240up.less
+    @import "responsive/_1240up.less";
+
+} // end of media query
